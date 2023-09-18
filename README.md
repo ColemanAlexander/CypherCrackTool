@@ -70,6 +70,7 @@ below are images of me trying to solve it by hand please ignore the Japanese. si
 ![Untitled (3)](https://github.com/ColemanAlexander/CypherCrackTool/assets/104588582/7df01de3-7517-42e8-863f-e57fd8b05209)
 
 ## The code snippet that deciphers this specific encryption
+imageBitmap is the image that the user captured. This code is designed to modify the text reocgnized in the image and decrypt it according to map_of_letters and then join the decyphered letters into a single string outputting it in the application. If the text recognition failed it will say "Nothing to show". It the user clicks "DECIPHER" without taking a picture the application says "Select an image first".
 
         private fun processImage() {
                 var map_of_letters = mapOf(" " to " ", "A" to "B", "B" to "K", "C" to "F", "D" to "L", "E" to "M", "F" to "N", "G" to "O", "H" to "P", "I" to "H", "J" to "Q", "K" to "R", "L" to "S", "M" to "A", "N" to "C", "O" to "T", "P" to "I", "Q" to "U", "R" to "G", "S" to "E", "T" to "J", "U" to "D", "V" to "V", "W" to "W", "X" to "X", "Y" to "Y", "Z" to "Z")

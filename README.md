@@ -69,6 +69,65 @@ below are images of me trying to solve it by hand please ignore the Japanese. si
 
 ![Untitled (3)](https://github.com/ColemanAlexander/CypherCrackTool/assets/104588582/7df01de3-7517-42e8-863f-e57fd8b05209)
 
+## The code snippet that deciphers this specific encryption
+private fun processImage() {
+        var map_of_letters = mapOf(" " to " ", "A" to "B", "B" to "K", "C" to "F", "D" to "L", "E" to "M", "F" to "N", "G" to "O", "H" to "P", "I" to "H", "J" to "Q", "K" to "R", "L" to "S", "M" to "A", "N" to "C", "O" to "T", "P" to "I", "Q" to "U", "R" to "G", "S" to "E", "T" to "J", "U" to "D", "V" to "V", "W" to "W", "X" to "X", "Y" to "Y", "Z" to "Z")
+
+        if (imageBitmap!=null){
+
+            val image=imageBitmap?.let {
+
+                InputImage.fromBitmap(it, 0)
+
+            }
+
+            image?.let {
+
+                recognizer.process(it)
+                    .addOnSuccessListener {
+
+
+
+                        var textinlist = it.text.toList()
+
+
+                        val modifiedList = mutableListOf<String>()
+
+                        for (i in 0 until textinlist.size) {
+                            val element = textinlist[i]
+                            val modifiedElement = if (map_of_letters.containsKey(element.toString())) {
+                                map_of_letters[element.toString()] ?: element
+                            } else {
+                                element
+                            }
+
+                            modifiedList.add(modifiedElement.toString())
+                        }
+
+                        var decipheredtext = modifiedList.joinToString().replace(",", "")
+
+
+
+
+
+                        binding.textView.text=decipheredtext
+                    }
+                    .addOnFailureListener{
+
+                        Toast.makeText(this, "Nothing to show", Toast.LENGTH_SHORT).show()
+                    }
+
+            }
+
+        }
+
+
+        else{
+
+            Toast.makeText(this, "Please select image first", Toast.LENGTH_SHORT).show()
+        }
+    }
+
 
 ## Solution
 

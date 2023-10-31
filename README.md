@@ -1,6 +1,8 @@
 # CypherCrackTool
-Link to apk: [https://drive.google.com/file/d/1vPuInQG1mgoBj_jlFfokon-usk5yAn14/view?usp=sharing](https://drive.google.com/file/d/1mCbPPDhcoe8bvNNjglxRnFxlEa8XENX0/view?usp=drive_link)  
-This application was built according the following youtube video: https://youtu.be/OY5M-T4Zq60?si=-9FJK8XFQgXpfQIe 
+
+Link to [app demo](https://drive.google.com/file/d/1a60EgC4uuFqJZTSZQKcYpN2_Ly92PzjA/view?usp=sharing)
+Link to [apk](https://drive.google.com/file/d/1mCbPPDhcoe8bvNNjglxRnFxlEa8XENX0/view?usp=drive_link)  
+This application was built according to the following [video](https://youtu.be/OY5M-T4Zq60?si=-9FJK8XFQgXpfQIe) 
 
 ## Ciphertext 
 GFS WMY OG LGDVS MF SFNKYHOSU ESLLMRS, PC WS
